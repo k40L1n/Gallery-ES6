@@ -1,0 +1,53 @@
+body {
+  margin: 20px;
+  padding: 0;
+  background: #333;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+  max-width: 760px;
+  margin: auto;
+  border: #fff solid 3px;
+  background: #ffffff;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+  font-size: 75px;
+  text-align: center;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
+          animation: fadeIn 0.5s ease-in 1 forwards;
+}
+/*# sourceMappingURL=style.css.map */
